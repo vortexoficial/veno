@@ -1,0 +1,105 @@
+/* style.css */
+
+/* Variáveis */
+:root {
+    --veno-red: #E60000;
+}
+
+/* =========================================
+   Loader & Transitions
+   ========================================= */
+#loader {
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@keyframes loader-bar-grow {
+    0% { transform: scaleX(0); }
+    100% { transform: scaleX(1); }
+}
+/* Ajustado para 1.5s para dar tempo de ver a barra encher */
+.animate-loader-bar {
+    animation: loader-bar-grow 1.5s ease-out forwards;
+}
+
+/* =========================================
+   Animations & Effects
+   ========================================= */
+
+/* Smooth Fade In for Sections */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Marquee (Barra Animada) */
+.marquee-content {
+    width: max-content;
+    animation: marquee 60s linear infinite;
+}
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Sheen Effect */
+@keyframes sheen-effect {
+    0% { left: -100%; }
+    20% { left: 100%; }
+    100% { left: 100%; }
+}
+.btn-sheen {
+    position: relative;
+    overflow: hidden;
+}
+.btn-sheen::after {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%; width: 50%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transform: skewX(-25deg);
+    animation: sheen-effect 3s infinite;
+    pointer-events: none;
+}
+
+/* Float Animation */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Card Float Animation */
+@keyframes card-float {
+    0%, 100% { transform: translateY(0); box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1); }
+    50% { transform: translateY(-10px); box-shadow: 0 20px 40px -10px rgba(0,0,0,0.2); }
+}
+.animate-card-float {
+    animation: card-float 4s ease-in-out infinite;
+}
+
+/* Background Pattern */
+.bg-pattern-dots {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* Shadows */
+.shadow-strong-glow {
+    box-shadow: 0 0 30px rgba(0,0,0,0.15);
+}
+.dark .shadow-strong-glow {
+    box-shadow: 0 0 30px rgba(255,255,255,0.05);
+}
