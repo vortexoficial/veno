@@ -56,16 +56,16 @@
     </script>
 
     <script>
-            (function () {
-                try {
-                    const theme = localStorage.getItem('theme');
-                    if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                        document.documentElement.classList.add('dark');
-                    } else {
-                        document.documentElement.classList.remove('dark');
-                    }
-                } catch (e) { }
-            })();
+        (function () {
+            try {
+                const theme = localStorage.getItem('theme');
+                if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                    document.documentElement.classList.add('dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                }
+            } catch (e) { }
+        })();
     </script>
 </head>
 
@@ -82,7 +82,8 @@
 
     <header class="fixed top-4 left-0 right-0 z-50 w-full px-4 transition-all duration-300">
         <div class="container mx-auto max-w-6xl">
-            <div class="flex h-16 items-center justify-between bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border border-gray-100 dark:border-gray-600 rounded-2xl px-6 shadow-soft">
+            <div
+                class="flex h-16 items-center justify-between bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border border-gray-100 dark:border-gray-600 rounded-2xl px-6 shadow-soft">
                 <a href="#hero" class="block">
                     <img src="img/logo.png" alt="Veno Logo" class="h-8 w-auto object-contain">
                 </a>
@@ -92,7 +93,8 @@
                         <li><a href="#como-funciona" class="text-sm font-medium hover:text-veno-red transition-colors">Como Funciona</a></li>
                         <li><a href="#beneficios" class="text-sm font-medium hover:text-veno-red transition-colors">Benefícios</a></li>
                         <li>
-                            <a href="https://api.whatsapp.com/send?phone=5513997829300&text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20simular%20meu%20seguro%20DIT." target="_blank"
+                            <a href="https://api.whatsapp.com/send?phone=5513997829300&text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20simular%20meu%20seguro%20DIT."
+                                target="_blank"
                                 class="btn-sheen bg-veno-red text-white font-bold py-2 px-6 rounded-xl flex items-center hover:bg-red-700 transition-all text-sm shadow-glow">
                                 Simular Agora
                             </a>
@@ -134,19 +136,23 @@
                 <div class="flex flex-col lg:flex-row items-center lg:items-end gap-8 lg:gap-0">
 
                     <div class="lg:w-1/2 z-10 fade-in-section text-center lg:text-left lg:mb-32">
-                        
-                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 dark:bg-red-900/20 text-veno-red text-xs font-bold mb-4 uppercase tracking-wider mx-auto lg:mx-0">
+
+                        <div
+                            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 dark:bg-red-900/20 text-veno-red text-xs font-bold mb-4 uppercase tracking-wider mx-auto lg:mx-0">
                             <i class="fas fa-shield-alt"></i> Proteção de Renda
                         </div>
-                        
-                        <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-[1] lg:leading-tight mb-4">
+
+                        <h1
+                            class="text-3xl sm:text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-[1] lg:leading-tight mb-4">
                             Proteção financeira imediata quando você <span class="text-veno-red">mais precisa.</span>
                         </h1>
-                        
-                        <p class="text-sm lg:text-lg text-gray-600 dark:text-gray-300 mb-6 leading-[1.2] lg:leading-relaxed font-light max-w-lg mx-auto lg:mx-0">
-                            O DIT garante uma renda diária caso você fique impossibilitado de trabalhar por doença ou acidente. Simples, rápido e essencial.
+
+                        <p
+                            class="text-sm lg:text-lg text-gray-600 dark:text-gray-300 mb-6 leading-[1.2] lg:leading-relaxed font-light max-w-lg mx-auto lg:mx-0">
+                            O DIT garante uma renda diária caso você fique impossibilitado de trabalhar por doença ou
+                            acidente. Simples, rápido e essencial.
                         </p>
-                        
+
                         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                             <a href="https://api.whatsapp.com/send?phone=5513997829300&text=Ol%C3%A1!%20Quero%20fazer%20uma%20simula%C3%A7%C3%A3o%20do%20DIT%20e%20proteger%20minha%20renda."
                                 class="btn-sheen bg-veno-red text-white font-bold py-4 px-8 rounded-xl hover:bg-red-700 transition-all shadow-xl shadow-red-500/20 flex items-center justify-center gap-2">
@@ -157,31 +163,41 @@
                                 Saber mais
                             </a>
                         </div>
-                        
-                        <div class="mt-3 lg:mt-8 flex items-center gap-2 text-[10px] lg:text-sm text-gray-500 dark:text-gray-400 justify-center lg:justify-start">
+
+                        <div
+                            class="mt-3 lg:mt-8 flex items-center gap-2 text-[10px] lg:text-sm text-gray-500 dark:text-gray-400 justify-center lg:justify-start">
                             <div class="flex -space-x-2">
-                                <div class="w-5 h-5 lg:w-8 lg:h-8 rounded-full bg-gray-200 border-2 border-white dark:border-veno-dark"></div>
-                                <div class="w-5 h-5 lg:w-8 lg:h-8 rounded-full bg-gray-300 border-2 border-white dark:border-veno-dark"></div>
-                                <div class="w-5 h-5 lg:w-8 lg:h-8 rounded-full bg-gray-400 border-2 border-white dark:border-veno-dark"></div>
+                                <div
+                                    class="w-5 h-5 lg:w-8 lg:h-8 rounded-full bg-gray-200 border-2 border-white dark:border-veno-dark">
+                                </div>
+                                <div
+                                    class="w-5 h-5 lg:w-8 lg:h-8 rounded-full bg-gray-300 border-2 border-white dark:border-veno-dark">
+                                </div>
+                                <div
+                                    class="w-5 h-5 lg:w-8 lg:h-8 rounded-full bg-gray-400 border-2 border-white dark:border-veno-dark">
+                                </div>
                             </div>
                             <p>+500 profissionais protegidos</p>
                         </div>
                     </div>
 
                     <div class="lg:w-1/2 relative fade-in-section lg:-mr-12" style="animation-delay: 0.2s;">
-                        
+
                         <div class="relative z-0 -mb-8 lg:-mb-10 text-center lg:text-right">
                             <img src="img/hero-img.png" alt="Profissional Seguro"
                                 class="w-full lg:w-[85%] ml-auto h-auto object-contain hover:scale-105 transition-transform duration-700">
                         </div>
-                        
-                        <div class="absolute bottom-8 left-0 lg:bottom-12 lg:left-16 bg-white dark:bg-gray-800 p-2 lg:p-4 rounded-lg border border-gray-50 dark:border-gray-600 flex items-center gap-2 lg:gap-4 animate-float shadow-strong-glow z-10">
-                            <div class="w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gray-100 dark:bg-gray-700 text-veno-red flex items-center justify-center text-xs lg:text-lg">
+
+                        <div
+                            class="absolute bottom-8 left-0 lg:bottom-12 lg:left-16 bg-white dark:bg-gray-800 p-2 lg:p-4 rounded-lg border border-gray-50 dark:border-gray-600 flex items-center gap-2 lg:gap-4 animate-float shadow-strong-glow z-10">
+                            <div
+                                class="w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gray-100 dark:bg-gray-700 text-veno-red flex items-center justify-center text-xs lg:text-lg">
                                 <i class="fas fa-check"></i>
                             </div>
                             <div>
                                 <p class="text-[10px] lg:text-xs text-gray-500">Status</p>
-                                <p class="font-bold text-gray-900 dark:text-white text-xs lg:text-lg whitespace-nowrap">Renda Garantida</p>
+                                <p class="font-bold text-gray-900 dark:text-white text-xs lg:text-lg whitespace-nowrap">
+                                    Renda Garantida</p>
                             </div>
                         </div>
                     </div>
@@ -190,8 +206,10 @@
             </div>
         </section>
 
-        <section class="border-y border-gray-100 dark:border-gray-700 py-6 bg-veno-light dark:bg-black/20 overflow-hidden">
-            <div class="marquee-container flex w-full opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+        <section
+            class="border-y border-gray-100 dark:border-gray-700 py-6 bg-veno-light dark:bg-black/20 overflow-hidden">
+            <div
+                class="marquee-container flex w-full opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
                 <div class="marquee-content flex items-center font-light text-gray-400 dark:text-gray-400">
                     <div class="flex items-center whitespace-nowrap">
                         <span class="mx-12 text-xl"><i class="fas fa-user-md mr-2"></i> Médicos</span>
@@ -223,8 +241,12 @@
 
         <section id="oquee" class="py-24 bg-gradient-to-br from-veno-red to-[#990000] relative overflow-hidden">
             <div class="absolute inset-0 bg-pattern-dots opacity-30"></div>
-            <div class="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
-            <div class="absolute bottom-0 right-0 w-96 h-96 bg-black/10 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
+            <div
+                class="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2">
+            </div>
+            <div
+                class="absolute bottom-0 right-0 w-96 h-96 bg-black/10 rounded-full blur-3xl translate-x-1/3 translate-y-1/3">
+            </div>
 
             <div class="container mx-auto max-w-6xl px-4 relative z-10">
                 <div class="text-center max-w-3xl mx-auto mb-16 fade-in-section">
@@ -235,31 +257,37 @@
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8 fade-in-section">
-                    <div class="bg-white/95 dark:bg-gray-900/95 backdrop-blur-md p-8 rounded-xl border border-white/20 dark:border-gray-600 shadow-2xl animate-card-float hover:scale-[1.02] transition-transform duration-300">
-                        <div class="w-14 h-14 rounded-lg bg-red-50 dark:bg-gray-800 text-veno-red flex items-center justify-center text-2xl mb-6 shadow-inner">
+                    <div
+                        class="bg-white/95 dark:bg-gray-900/95 backdrop-blur-md p-8 rounded-xl border border-white/20 dark:border-gray-600 shadow-2xl animate-card-float hover:scale-[1.02] transition-transform duration-300">
+                        <div
+                            class="w-14 h-14 rounded-lg bg-red-50 dark:bg-gray-800 text-veno-red flex items-center justify-center text-2xl mb-6 shadow-inner">
                             <i class="fas fa-umbrella"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Segurança Diária</h3>
                         <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                            O DIT (Diária por Incapacidade Temporária) garante uma renda diária enquanto você estiver afastado por doença ou acidente.
+                            O DIT (Diária por Incapacidade Temporária) garante uma renda diária enquanto você estiver
+                            afastado por doença ou acidente.
                         </p>
                     </div>
 
                     <div class="bg-white/95 dark:bg-gray-900/95 backdrop-blur-md p-8 rounded-xl border border-white/20 dark:border-gray-600 shadow-2xl animate-card-float hover:scale-[1.02] transition-transform duration-300"
                         style="animation-delay: 1s;">
-                        <div class="w-14 h-14 rounded-lg bg-red-50 dark:bg-gray-800 text-veno-red flex items-center justify-center text-2xl mb-6 shadow-inner">
+                        <div
+                            class="w-14 h-14 rounded-lg bg-red-50 dark:bg-gray-800 text-veno-red flex items-center justify-center text-2xl mb-6 shadow-inner">
                             <i class="fas fa-chart-line"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Continuidade Financeira</h3>
                         <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                            Ideal para autônomos e profissionais liberais que não podem parar. Mantém as contas em dia mesmo quando a saúde pede pausa.
+                            Ideal para autônomos e profissionais liberais que não podem parar. Mantém as contas em dia
+                            mesmo quando a saúde pede pausa.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="lg:hidden w-full relative z-20 bg-veno-light dark:bg-[#0f0f0f] flex justify-center -mt-14 pt-6 pb-2 rounded-t-[3rem]">
+        <div
+            class="lg:hidden w-full relative z-20 bg-veno-light dark:bg-[#0f0f0f] flex justify-center -mt-14 pt-6 pb-2 rounded-t-[3rem]">
             <img src="img/img2.png" alt="Destaque Veno" class="w-32 h-auto block object-contain">
         </div>
 
@@ -271,8 +299,11 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
-                    <div class="relative bg-white dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-600 shadow-sm hover:-translate-y-1 transition-transform fade-in-section">
-                        <div class="absolute -top-6 left-8 w-12 h-12 bg-veno-red text-white rounded-lg flex items-center justify-center font-bold text-xl shadow-lg shadow-red-500/30">1</div>
+                    <div
+                        class="relative bg-white dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-600 shadow-sm hover:-translate-y-1 transition-transform fade-in-section">
+                        <div
+                            class="absolute -top-6 left-8 w-12 h-12 bg-veno-red text-white rounded-lg flex items-center justify-center font-bold text-xl shadow-lg shadow-red-500/30">
+                            1</div>
                         <div class="mt-4">
                             <h3 class="text-xl font-bold mb-3">Contratação</h3>
                             <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
@@ -283,7 +314,9 @@
 
                     <div class="relative bg-white dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-600 shadow-sm hover:-translate-y-1 transition-transform fade-in-section"
                         style="animation-delay: 0.1s;">
-                        <div class="absolute -top-6 left-8 w-12 h-12 bg-veno-red text-white rounded-lg flex items-center justify-center font-bold text-xl shadow-lg shadow-red-500/30">2</div>
+                        <div
+                            class="absolute -top-6 left-8 w-12 h-12 bg-veno-red text-white rounded-lg flex items-center justify-center font-bold text-xl shadow-lg shadow-red-500/30">
+                            2</div>
                         <div class="mt-4">
                             <h3 class="text-xl font-bold mb-3">Afastamento</h3>
                             <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
@@ -294,7 +327,9 @@
 
                     <div class="relative bg-white dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-600 shadow-sm hover:-translate-y-1 transition-transform fade-in-section"
                         style="animation-delay: 0.2s;">
-                        <div class="absolute -top-6 left-8 w-12 h-12 bg-veno-red text-white rounded-lg flex items-center justify-center font-bold text-xl shadow-lg shadow-red-500/30">3</div>
+                        <div
+                            class="absolute -top-6 left-8 w-12 h-12 bg-veno-red text-white rounded-lg flex items-center justify-center font-bold text-xl shadow-lg shadow-red-500/30">
+                            3</div>
                         <div class="mt-4">
                             <h3 class="text-xl font-bold mb-3">Recebimento</h3>
                             <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
@@ -314,48 +349,195 @@
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-6 fade-in-section">
-                    <div class="p-8 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-100 dark:border-gray-700 opacity-70">
+                    <div
+                        class="p-8 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-100 dark:border-gray-700 opacity-70">
                         <h3 class="text-xl font-bold text-gray-500 mb-6 uppercase tracking-wider">INSS / Governo</h3>
                         <ul class="space-y-4">
-                            <li class="flex items-center text-gray-500"><i class="fas fa-times mr-3 w-6 text-center"></i> Demora meses para pagar</li>
-                            <li class="flex items-center text-gray-500"><i class="fas fa-times mr-3 w-6 text-center"></i> Valor limitado (Teto)</li>
-                            <li class="flex items-center text-gray-500"><i class="fas fa-times mr-3 w-6 text-center"></i> Alta burocracia e filas</li>
+                            <li class="flex items-center text-gray-500"><i class="fas fa-times mr-3 w-6 text-center"></i>
+                                Demora meses para pagar</li>
+                            <li class="flex items-center text-gray-500"><i class="fas fa-times mr-3 w-6 text-center"></i>
+                                Valor limitado (Teto)</li>
+                            <li class="flex items-center text-gray-500"><i class="fas fa-times mr-3 w-6 text-center"></i>
+                                Alta burocracia e filas</li>
                         </ul>
                     </div>
 
-                    <div class="p-8 rounded-xl bg-white dark:bg-gray-800 border-2 border-veno-red shadow-2xl shadow-red-500/10 relative overflow-hidden">
-                        <div class="absolute top-0 right-0 bg-veno-red text-white text-xs font-bold px-3 py-1 rounded-bl-lg">RECOMENDADO</div>
+                    <div
+                        class="p-8 rounded-xl bg-white dark:bg-gray-800 border-2 border-veno-red shadow-2xl shadow-red-500/10 relative overflow-hidden">
+                        <div
+                            class="absolute top-0 right-0 bg-veno-red text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                            RECOMENDADO</div>
                         <h3 class="text-xl font-bold text-veno-red mb-6 uppercase tracking-wider">DIT Veno</h3>
                         <ul class="space-y-4">
-                            <li class="flex items-center font-medium"><i class="fas fa-check mr-3 w-6 text-center text-veno-red"></i> Pagamento rápido na conta</li>
-                            <li class="flex items-center font-medium"><i class="fas fa-check mr-3 w-6 text-center text-veno-red"></i> Valor integral contratado</li>
-                            <li class="flex items-center font-medium"><i class="fas fa-check mr-3 w-6 text-center text-veno-red"></i> 100% Digital e Simples</li>
+                            <li class="flex items-center font-medium"><i
+                                    class="fas fa-check mr-3 w-6 text-center text-veno-red"></i> Pagamento rápido na
+                                conta</li>
+                            <li class="flex items-center font-medium"><i
+                                    class="fas fa-check mr-3 w-6 text-center text-veno-red"></i> Valor integral
+                                contratado</li>
+                            <li class="flex items-center font-medium"><i
+                                    class="fas fa-check mr-3 w-6 text-center text-veno-red"></i> 100% Digital e Simples
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
+<section class="pt-0 pb-32 bg-white dark:bg-veno-dark text-center relative overflow-hidden">
+            <div class="container mx-auto max-w-5xl px-4 relative z-10 fade-in-section">
 
-        <section class="pt-0 pb-32 bg-white dark:bg-veno-dark text-center relative overflow-hidden">
-            <div class="container mx-auto max-w-3xl px-4 relative z-10 fade-in-section">
-                
-                <div class="flex justify-center -mb-6 mt-10 relative z-10">
-                    <img src="img/homem-apontando.png" alt="Aproveite agora" class="w-80 lg:w-[30rem] h-auto object-contain hover:scale-105 transition-transform duration-500">
+                <div class="professions-carousel-wrapper relative w-full h-[320px] md:h-[450px] mt-10 mb-12 overflow-hidden rounded-3xl">
+
+                    <div class="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-white dark:from-veno-dark to-transparent z-30 pointer-events-none"></div>
+                    <div class="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-white dark:from-veno-dark to-transparent z-30 pointer-events-none"></div>
+
+                    <div class="professions-track flex h-full gap-4 md:gap-6">
+
+                        <div class="profession-item relative w-[200px] md:w-[280px] h-full flex-shrink-0 rounded-2xl overflow-hidden shadow-soft group">
+                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=430&h=540&fit=crop" alt="Médico" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-veno-red/80 mix-blend-multiply z-10 transition-opacity duration-300"></div>
+                            <div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4">
+                                <div class="w-16 h-16 mb-4 rounded-full border-2 border-white/30 flex items-center justify-center bg-white/10 backdrop-blur-sm">
+                                    <i class="fas fa-user-md text-3xl text-white"></i>
+                                </div>
+                                <p class="font-bold text-2xl md:text-3xl text-white uppercase tracking-wider drop-shadow-md">Médicos</p>
+                            </div>
+                        </div>
+
+                        <div class="profession-item relative w-[200px] md:w-[280px] h-full flex-shrink-0 rounded-2xl overflow-hidden shadow-soft group">
+                            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?q=80&w=430&h=540&fit=crop" alt="Dentista" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-veno-red/80 mix-blend-multiply z-10"></div>
+                            <div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4">
+                                <div class="w-16 h-16 mb-4 rounded-full border-2 border-white/30 flex items-center justify-center bg-white/10 backdrop-blur-sm">
+                                    <i class="fas fa-tooth text-3xl text-white"></i>
+                                </div>
+                                <p class="font-bold text-2xl md:text-3xl text-white uppercase tracking-wider drop-shadow-md">Dentistas</p>
+                            </div>
+                        </div>
+
+                        <div class="profession-item relative w-[200px] md:w-[280px] h-full flex-shrink-0 rounded-2xl overflow-hidden shadow-soft group">
+                            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=430&h=540&fit=crop" alt="Advogado" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-veno-red/80 mix-blend-multiply z-10"></div>
+                            <div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4">
+                                <div class="w-16 h-16 mb-4 rounded-full border-2 border-white/30 flex items-center justify-center bg-white/10 backdrop-blur-sm">
+                                    <i class="fas fa-gavel text-3xl text-white"></i>
+                                </div>
+                                <p class="font-bold text-2xl md:text-3xl text-white uppercase tracking-wider drop-shadow-md">Advogados</p>
+                            </div>
+                        </div>
+
+                        <div class="profession-item relative w-[200px] md:w-[280px] h-full flex-shrink-0 rounded-2xl overflow-hidden shadow-soft group">
+                            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=430&h=540&fit=crop" alt="Engenheiro" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-veno-red/80 mix-blend-multiply z-10"></div>
+                            <div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4">
+                                <div class="w-16 h-16 mb-4 rounded-full border-2 border-white/30 flex items-center justify-center bg-white/10 backdrop-blur-sm">
+                                    <i class="fas fa-hard-hat text-3xl text-white"></i>
+                                </div>
+                                <p class="font-bold text-2xl md:text-3xl text-white uppercase tracking-wider drop-shadow-md">Engenheiros</p>
+                            </div>
+                        </div>
+
+                        <div class="profession-item relative w-[200px] md:w-[280px] h-full flex-shrink-0 rounded-2xl overflow-hidden shadow-soft group">
+                            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=430&h=540&fit=crop" alt="Autônomo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-veno-red/80 mix-blend-multiply z-10"></div>
+                            <div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4">
+                                <div class="w-16 h-16 mb-4 rounded-full border-2 border-white/30 flex items-center justify-center bg-white/10 backdrop-blur-sm">
+                                    <i class="fas fa-laptop text-3xl text-white"></i>
+                                </div>
+                                <p class="font-bold text-2xl md:text-3xl text-white uppercase tracking-wider drop-shadow-md">Autônomos</p>
+                            </div>
+                        </div>
+
+                        <div class="profession-item relative w-[200px] md:w-[280px] h-full flex-shrink-0 rounded-2xl overflow-hidden shadow-soft group">
+                            <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=430&h=540&fit=crop" alt="Motorista" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-veno-red/80 mix-blend-multiply z-10"></div>
+                            <div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4">
+                                <div class="w-16 h-16 mb-4 rounded-full border-2 border-white/30 flex items-center justify-center bg-white/10 backdrop-blur-sm">
+                                    <i class="fas fa-car text-3xl text-white"></i>
+                                </div>
+                                <p class="font-bold text-2xl md:text-3xl text-white uppercase tracking-wider drop-shadow-md">Motoristas</p>
+                            </div>
+                        </div>
+
+
+                        <div class="profession-item relative w-[200px] md:w-[280px] h-full flex-shrink-0 rounded-2xl overflow-hidden shadow-soft group">
+                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=430&h=540&fit=crop" alt="Médico" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-veno-red/80 mix-blend-multiply z-10"></div>
+                            <div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4">
+                                <div class="w-16 h-16 mb-4 rounded-full border-2 border-white/30 flex items-center justify-center bg-white/10 backdrop-blur-sm">
+                                    <i class="fas fa-user-md text-3xl text-white"></i>
+                                </div>
+                                <p class="font-bold text-2xl md:text-3xl text-white uppercase tracking-wider drop-shadow-md">Médicos</p>
+                            </div>
+                        </div>
+                        <div class="profession-item relative w-[200px] md:w-[280px] h-full flex-shrink-0 rounded-2xl overflow-hidden shadow-soft group">
+                            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?q=80&w=430&h=540&fit=crop" alt="Dentista" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-veno-red/80 mix-blend-multiply z-10"></div>
+                            <div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4">
+                                <div class="w-16 h-16 mb-4 rounded-full border-2 border-white/30 flex items-center justify-center bg-white/10 backdrop-blur-sm">
+                                    <i class="fas fa-tooth text-3xl text-white"></i>
+                                </div>
+                                <p class="font-bold text-2xl md:text-3xl text-white uppercase tracking-wider drop-shadow-md">Dentistas</p>
+                            </div>
+                        </div>
+                        <div class="profession-item relative w-[200px] md:w-[280px] h-full flex-shrink-0 rounded-2xl overflow-hidden shadow-soft group">
+                            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=430&h=540&fit=crop" alt="Advogado" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-veno-red/80 mix-blend-multiply z-10"></div>
+                            <div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4">
+                                <div class="w-16 h-16 mb-4 rounded-full border-2 border-white/30 flex items-center justify-center bg-white/10 backdrop-blur-sm">
+                                    <i class="fas fa-gavel text-3xl text-white"></i>
+                                </div>
+                                <p class="font-bold text-2xl md:text-3xl text-white uppercase tracking-wider drop-shadow-md">Advogados</p>
+                            </div>
+                        </div>
+                        <div class="profession-item relative w-[200px] md:w-[280px] h-full flex-shrink-0 rounded-2xl overflow-hidden shadow-soft group">
+                            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=430&h=540&fit=crop" alt="Engenheiro" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-veno-red/80 mix-blend-multiply z-10"></div>
+                            <div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4">
+                                <div class="w-16 h-16 mb-4 rounded-full border-2 border-white/30 flex items-center justify-center bg-white/10 backdrop-blur-sm">
+                                    <i class="fas fa-hard-hat text-3xl text-white"></i>
+                                </div>
+                                <p class="font-bold text-2xl md:text-3xl text-white uppercase tracking-wider drop-shadow-md">Engenheiros</p>
+                            </div>
+                        </div>
+                        <div class="profession-item relative w-[200px] md:w-[280px] h-full flex-shrink-0 rounded-2xl overflow-hidden shadow-soft group">
+                            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=430&h=540&fit=crop" alt="Autônomo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-veno-red/80 mix-blend-multiply z-10"></div>
+                            <div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4">
+                                <div class="w-16 h-16 mb-4 rounded-full border-2 border-white/30 flex items-center justify-center bg-white/10 backdrop-blur-sm">
+                                    <i class="fas fa-laptop text-3xl text-white"></i>
+                                </div>
+                                <p class="font-bold text-2xl md:text-3xl text-white uppercase tracking-wider drop-shadow-md">Autônomos</p>
+                            </div>
+                        </div>
+                        
+                        <div class="profession-item relative w-[200px] md:w-[280px] h-full flex-shrink-0 rounded-2xl overflow-hidden shadow-soft group">
+                            <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=430&h=540&fit=crop" alt="Motorista" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-veno-red/80 mix-blend-multiply z-10"></div>
+                            <div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4">
+                                <div class="w-16 h-16 mb-4 rounded-full border-2 border-white/30 flex items-center justify-center bg-white/10 backdrop-blur-sm">
+                                    <i class="fas fa-car text-3xl text-white"></i>
+                                </div>
+                                <p class="font-bold text-2xl md:text-3xl text-white uppercase tracking-wider drop-shadow-md">Motoristas</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight z-30 relative">
                     Imprevistos acontecem.<br>Ficar sem renda é opcional.
                 </h2>
-                <p class="text-xl text-gray-600 dark:text-gray-300 mb-10 font-light">
+                <p class="text-xl text-gray-600 dark:text-gray-300 mb-10 font-light z-30 relative">
                     Proteja hoje o que você construiu. Contratar é rápido e seguro.
                 </p>
-                <a href="https://api.whatsapp.com/send?phone=5513997829300&text=Ol%C3%A1!%20Quero%20garantir%20minha%20prote%C3%A7%C3%A3o%20com%20o%20DIT."
-                    class="btn-sheen inline-block bg-veno-red text-white font-bold py-5 px-12 rounded-2xl text-lg hover:bg-red-700 shadow-xl shadow-red-900/50 transform hover:scale-105 transition-transform">
-                    Garantir minha proteção
-                </a>
+                <div class="relative z-30">
+                    <a href="https://api.whatsapp.com/send?phone=5513997829300&text=Ol%C3%A1!%20Quero%20garantir%20minha%20prote%C3%A7%C3%A3o%20com%20o%20DIT."
+                        class="btn-sheen inline-block bg-veno-red text-white font-bold py-5 px-12 rounded-2xl text-lg hover:bg-red-700 shadow-xl shadow-red-900/50 transform hover:scale-105 transition-transform">
+                        Garantir minha proteção
+                    </a>
+                </div>
             </div>
         </section>
-
     </main>
 
     <footer class="bg-white dark:bg-black pt-16 pb-8 text-sm relative">
@@ -364,7 +546,8 @@
                 <div class="col-span-1">
                     <img src="img/logo.png" alt="Veno Logo" class="h-10 w-auto mb-6 opacity-90">
                     <p class="text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
-                        Especialistas em seguros para profissionais que não podem parar. Proteção de renda simples e digital desde 2002.
+                        Especialistas em seguros para profissionais que não podem parar. Proteção de renda simples e
+                        digital desde 2002.
                     </p>
                 </div>
 
@@ -374,10 +557,14 @@
                         <span class="absolute -left-8 top-1 h-4 w-1 bg-veno-red hidden md:block"></span>
                     </h4>
                     <ul class="space-y-3 text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200">
-                        <li><a href="#oquee" class="hover:text-veno-red transition-colors"><i class="fas fa-chevron-right text-xs mr-2 text-veno-red"></i> O que é</a></li>
-                        <li><a href="#como-funciona" class="hover:text-veno-red transition-colors"><i class="fas fa-chevron-right text-xs mr-2 text-veno-red"></i> Como Funciona</a></li>
-                        <li><a href="#beneficios" class="hover:text-veno-red transition-colors"><i class="fas fa-chevron-right text-xs mr-2 text-veno-red"></i> Benefícios</a></li>
-                        <li><a href="#" class="hover:text-veno-red transition-colors"><i class="fas fa-chevron-right text-xs mr-2 text-veno-red"></i> Quem Somos</a></li>
+                        <li><a href="#oquee" class="hover:text-veno-red transition-colors"><i
+                                    class="fas fa-chevron-right text-xs mr-2 text-veno-red"></i> O que é</a></li>
+                        <li><a href="#como-funciona" class="hover:text-veno-red transition-colors"><i
+                                    class="fas fa-chevron-right text-xs mr-2 text-veno-red"></i> Como Funciona</a></li>
+                        <li><a href="#beneficios" class="hover:text-veno-red transition-colors"><i
+                                    class="fas fa-chevron-right text-xs mr-2 text-veno-red"></i> Benefícios</a></li>
+                        <li><a href="#" class="hover:text-veno-red transition-colors"><i
+                                    class="fas fa-chevron-right text-xs mr-2 text-veno-red"></i> Quem Somos</a></li>
                     </ul>
                 </div>
 
@@ -392,12 +579,13 @@
                             <span>Atendimento Digital para todo o Brasil.</span>
                         </li>
                         <li class="flex items-center">
-                             <i class="fab fa-whatsapp text-veno-red mr-3"></i>
+                            <i class="fab fa-whatsapp text-veno-red mr-3"></i>
                             <span>(13) 99782-9300</span>
                         </li>
                         <li class="flex items-center">
-                             <i class="far fa-envelope text-veno-red mr-3"></i>
-                            <a href="mailto:contato@venocorretora.com.br" class="hover:text-veno-red transition-colors">contato@venocorretora.com.br</a>
+                            <i class="far fa-envelope text-veno-red mr-3"></i>
+                            <a href="mailto:contato@venocorretora.com.br"
+                                class="hover:text-veno-red transition-colors">contato@venocorretora.com.br</a>
                         </li>
                     </ul>
                 </div>
@@ -409,13 +597,19 @@
                     </h4>
                     <p class="text-gray-500 dark:text-gray-400 mb-4">Acompanhe nossas novidades:</p>
                     <div class="flex gap-3 text-gray-400">
-                        <a href="https://www.instagram.com/venocorretora/?hl=en" target="_blank" class="w-10 h-10 bg-gray-100 dark:bg-gray-800 flex items-center justify-center rounded hover:bg-veno-red hover:text-white transition-all"><i class="fab fa-instagram text-lg"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61560764302766" target="_blank" class="w-10 h-10 bg-gray-100 dark:bg-gray-800 flex items-center justify-center rounded hover:bg-veno-red hover:text-white transition-all"><i class="fab fa-facebook-f text-lg"></i></a>
-                        <a href="https://www.linkedin.com/company/veno-corretora-de-seguros/" target="_blank" class="w-10 h-10 bg-gray-100 dark:bg-gray-800 flex items-center justify-center rounded hover:bg-veno-red hover:text-white transition-all"><i class="fab fa-linkedin-in text-lg"></i></a>
+                        <a href="https://www.instagram.com/venocorretora/?hl=en" target="_blank"
+                            class="w-10 h-10 bg-gray-100 dark:bg-gray-800 flex items-center justify-center rounded hover:bg-veno-red hover:text-white transition-all"><i
+                                class="fab fa-instagram text-lg"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61560764302766" target="_blank"
+                            class="w-10 h-10 bg-gray-100 dark:bg-gray-800 flex items-center justify-center rounded hover:bg-veno-red hover:text-white transition-all"><i
+                                class="fab fa-facebook-f text-lg"></i></a>
+                        <a href="https://www.linkedin.com/company/veno-corretora-de-seguros/" target="_blank"
+                            class="w-10 h-10 bg-gray-100 dark:bg-gray-800 flex items-center justify-center rounded hover:bg-veno-red hover:text-white transition-all"><i
+                                class="fab fa-linkedin-in text-lg"></i></a>
                     </div>
                 </div>
             </div>
-            
+
             <div class="text-center text-gray-400 pt-8 border-t border-gray-100 dark:border-gray-700">
                 &copy; 2025 Veno Corretora. Todos os direitos reservados.
             </div>
@@ -431,4 +625,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>

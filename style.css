@@ -103,3 +103,78 @@
 .dark .shadow-strong-glow {
     box-shadow: 0 0 30px rgba(255,255,255,0.05);
 }
+
+/* =========================================
+   Professions Carousel Animation (NOVO)
+   ========================================= */
+
+.professions-track {
+    /* Define a largura para caber todos os itens (originais + duplicados) */
+    width: max-content;
+    /* Animação lenta e linear para o loop sutil. Ajuste '60s' para mais rápido/lento */
+    animation: professions-scroll 60s linear infinite;
+}
+
+/* Opcional: Pausar a animação quando o usuário passa o mouse por cima */
+.professions-carousel-wrapper:hover .professions-track {
+    animation-play-state: paused;
+}
+
+@keyframes professions-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /*
+           IMPORTANTE: Este valor deve ser exatamente -50% para um loop perfeito.
+           Isso funciona porque duplicamos exatamente o conjunto de imagens no HTML.
+        */
+        transform: translateX(-50%);
+    }
+}
+
+/* Ajuste fino para os itens do carrossel */
+.profession-item {
+    /* Garante que as imagens mantenham a proporção 430x540 */
+    aspect-ratio: 430/540;
+}
+
+/* Ajuste para mobile para que os cards não fiquem muito grandes na tela pequena */
+@media (max-width: 768px) {
+    .professions-carousel-wrapper {
+        /* Altura ligeiramente menor no mobile se necessário, mas mantendo proporção */
+        height: 480px;
+    }
+    .profession-item {
+        width: 320px; /* Largura menor no mobile */
+        aspect-ratio: auto; /* Reseta aspect ratio para usar a altura do pai */
+    }
+}
+
+/* =========================================
+   Professions Carousel Animation
+   ========================================= */
+
+.professions-track {
+    /* Largura dinâmica */
+    width: max-content;
+    /* VELOCIDADE AUMENTADA: De 60s para 25s (quanto menor o número, mais rápido) */
+    animation: professions-scroll 25s linear infinite;
+}
+
+/* Opcional: Pausar ao passar o mouse */
+.professions-carousel-wrapper:hover .professions-track {
+    animation-play-state: paused;
+}
+
+@keyframes professions-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Ajuste mobile: Garante que os cards não fiquem gigantes */
+@media (max-width: 768px) {
+    .professions-carousel-wrapper {
+        /* Ajuste fino para telas muito pequenas se necessário */
+    }
+}
